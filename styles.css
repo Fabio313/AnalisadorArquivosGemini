@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz com que o corpo ocupe toda a altura da página */
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Flex container para o conteúdo da página */
+main {
+    flex-grow: 1; /* Faz o conteúdo expandir para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.upload-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.upload-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.upload-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Seção "Sobre" */
+.about-section {
+    padding: 40px;
+    background-color: #f0f0f0;
+    margin-top: auto; /* Garante que ele fique no final */
+    width: 100%; /* Garante que ele ocupe toda a largura da página */
+}
+
+/* Espaçamento em branco adicional antes do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.result-section {
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.result-show {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.result-show {
+    animation: fadeIn 1s ease;
+}

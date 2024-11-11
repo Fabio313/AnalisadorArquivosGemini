@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Upload de Arquivo</div>
+            <ul class="nav-links">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Upload no topo -->
+    <section id="inicio" class="upload-section">
+        <h1>Envie seu Arquivo</h1>
+        <p>Faça o upload do seu arquivo e envie para processamento pelo nosso sistema.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="file" accept="*/*" required>
+            <button type="submit" class="btn">Enviar Arquivo</button>
+        </form>
+        <div id="result" class="result-section"></div>
+    </section>
+
+    <!-- Sobre o Sistema -->
+    <section id="sobre" class="about-section">
+        <h2>Sobre Este Sistema</h2>
+        <p>Este sistema permite que você envie arquivos para serem processados conforme a aplicação necessária. Ele é ideal para integrar em seus aplicativos que requerem capacidades de gerenciamento de arquivos e processamento de dados.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Upload de Arquivo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
